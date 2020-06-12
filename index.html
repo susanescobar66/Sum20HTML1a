@@ -7,17 +7,64 @@
 		i{
 			color:red;
 		}
+		
+		.leftCol{background-color: aqua;}
+		
+		#listNames{
+			font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+			color:brown;}
 	
 	</style>
+	
 </head>
 
 <body>
 	<h1>Sea Turtles</h1>
-	<hr>
-		<h2>What do turtles eat?</h2>
+	
+	<table style="width:60%; border: thin solid; ">
+		
+  <tr align="left">
+    <th>Types of Sea Turtles</th>
+    <th>Food eaten</th>
+    <th>Average Lifespan</th>
+  </tr>
+		
+  <tr>
+	 <td class="leftCol"><a href="http://www.google.com">Green </a></td>
+    <td>Algae and Sea Grass</td>
+    <td>75 Years</td>
+  </tr>
+  <tr>
+    <td class="leftCol"><a href="loggerhead.html">Loggerhead</a></td>
+    <td>Conch, bivalves, horseshoe crabs</td>
+    <td>33 Years</td>
+  </tr>
+	<tr>
+    <td class="leftCol">Hawksbill</td>
+    <td>Fish, molluscs and marine worms</td>
+    <td>20 Years&nbsp;</td>
+  </tr>
+</table>
+		<h2 id="listNames">Types of Sea Turtles</h2>
+			<ol type="I">
+				<li>Green</li>
+					<ol type="i">
+				<li>baby turtles </li>
+				</ol>
+				<li id="turtleName"></li>
+				<li>Hawksbill</li>
+				<li>Leatherback</li>
+				<li>Flatback</li>
+	
+			</ol>
+	<h2> Hippos are fun!</h2>
 	<img src="images/seaturtle.jpg" alt="Sea Turle in Hawaii" height="200">
-			<h3> Algae</h3>
-	<p>Sea Turtles eat lots of <i title="Lots of plants."  style="color:blue;">plants</i></p>
+<h3> Algae</h3>
+	<p>Sea Turtles eat lots of <i title="Lots of plants."  style="color:blue; font-size: 20px">plants</i></p>
 	<h2>Where do sea turles live?</h2> 
+
 </body>
+	<script>
+document.getElementById("turtleName").innerHTML = "Loggerhead";
+</script>
 </html>
